@@ -87,8 +87,8 @@
 (unless (package-installed-p 'scala-mode2)
   (package-refresh-contents) (package-install 'scala-mode2))
 
-;Ensime config details, comment out until ensime works
-;(when (not package-archive-contents)
-;  (package-refresh-contents))
-;(require 'ensime)
-;(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+;;Ensime config details, comment out until ensime works
+;;(when (not package-archive-contents)
+;;  (package-refresh-contents))
+;;(require 'ensime)
+;;(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
