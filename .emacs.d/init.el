@@ -72,6 +72,13 @@
 ;; ---------------------------
 ;; -- ENSIME Mode Config    --
 ;; ---------------------------
+
+(setenv "PATH" (concat "/home/ubuntu/tools/sbt/bin:" (getenv "PATH")))
+(setenv "PATH" (concat "/home/ubuntu/libraries/scala-2.11.5/bin:" (getenv "PATH")))
+
+(when (memq window-system '(mac ns))
+ (exec-path-from-shell-initialize))
+
 (require 'package)
 (add-to-list 'package-archives
          '("melpa" . "http://melpa.milkbox.net/packages/") t)
