@@ -19,6 +19,7 @@
 (require 'windata)
 (require 'dirtree)
 (require 'compile)
+(require 'fill-column-indicator)
 (ido-mode t)
 (menu-bar-mode -1)
 (normal-erase-is-backspace-mode 1)
